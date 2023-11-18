@@ -4,3 +4,4 @@ read num
 num=$((num + 0))
 url=$(sed -n "${num}p" < zip_urls.txt)
 wget "$url" -O "/mnt/SDCARD/Themes/theme.$num.zip"
+unzip "/mnt/SDCARD/Themes/theme.$num.zip"
