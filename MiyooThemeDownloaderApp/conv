@@ -1,6 +1,6 @@
 #!/bin/sh
-cd /mnt/SDCARD/App/themestore/ && rm -f *.png
-cd /mnt/SDCARD/App/themestore/ && rm -f *.zip
+#cd /mnt/SDCARD/App/themestore/ && rm -f *.png
+#cd /mnt/SDCARD/App/themestore/ && rm -f *.zip
 cd -
 content=$(wget -qO- https://raw.githubusercontent.com/OnionUI/Themes/main/README.md)
 
