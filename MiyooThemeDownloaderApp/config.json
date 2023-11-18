@@ -1,0 +1,6 @@
+{
+	"label":	"Online Theme Shop",
+	"icon":	"icon/icon.png",
+	"launch":	"launch.sh",
+	"description":	"Theme downloader from Onion OS theme repo"
+}

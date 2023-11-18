@@ -1,0 +1,6 @@
+#!/bin/sh
+echo ID of preview?
+read num
+num=$((num + 0))
+url=$(sed -n "${num}p" < zip_urls.txt)
+wget "$url" -O "/mnt/SDCARD/Themes/theme.$num.zip"
