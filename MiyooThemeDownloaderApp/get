@@ -1,3 +1,4 @@
+#!/bin/sh
 #amt=$(grep -c '.' zip_urls.txt)
 #echo $amt
 echo Num of preview?
