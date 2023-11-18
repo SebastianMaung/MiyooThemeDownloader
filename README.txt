@@ -1,5 +1,5 @@
 # MiyooThemeDownloader
-Theme browser for the Miyoo Mini Plus
+Theme browser and downloader for the Miyoo Mini Plus
 Add these to your App folder of your Miyoo, and run the "Online Theme Shop".
 Let it download all the previews of the themes, then it will have you in the file explorer. 
 Select a theme preview, then press left or right to naviagate through.
