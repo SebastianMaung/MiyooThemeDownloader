@@ -1,5 +1,5 @@
 #!/bin/sh
-echo a
+echo "Launching conv"
 #cd /mnt/SDCARD/App/MiyooThemeDownloaderApp/ && rm -f *.png
 #cd /mnt/SDCARD/App/MiyooThemeDownloaderApp/ && rm -f *.zip
 #!/bin/bash
