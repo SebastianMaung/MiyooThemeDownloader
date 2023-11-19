@@ -15,3 +15,4 @@ Press A on the one you want to download, then A again when it prompts you
 It will download the theme, which should take only a few seconds
 You will then be sent to the theme switcher, where you can choose your newly downloaded theme
 If you do not want to change the theme, press menu
+Themes are saved to /mnt/SDCARD/Themes
