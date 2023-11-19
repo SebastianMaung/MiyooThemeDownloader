@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#Don't worry, it will not flash anything
 echo "=====================  $0   $1" 
 cd ..
 
@@ -87,11 +87,11 @@ if [ -f "./logos/$foldername/image1.jpg" ]; then
     		#./bin
                 #$foldername is number
 		./bin/say "Loading theme "$foldername"..."
-		sleep 3
+		sleep 1
                 sh ./downloadtheme.sh $foldername
                 ./bin/blank
     		./bin/say "Done"
-    		sleep 5
+    		sleep 2
 		cd /mnt/SDCARD/.tmp_update
 		./bin/themeSwitcher
 		exit 1
@@ -121,5 +121,4 @@ else
 	./bin/confirm any
 	exit 1
 fi
-
 
