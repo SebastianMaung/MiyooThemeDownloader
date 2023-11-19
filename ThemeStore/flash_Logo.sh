@@ -108,7 +108,7 @@ if [ -f "./logos/$foldername/image1.jpg" ]; then
 				DisplayInstructions=1
 			#	./bin/blank
 	            ./bin/jpgr "./logos/$foldername/image1.jpg"   # == Displays a rotated preview of the jpeg file
-				./bin/say "Really want to flash ?"$'\n'\("$foldername"\)$'\n\nA = Confirm    B = Cancel\nSelect = Fullscreen'
+				./bin/say "Really want to download?"$'\n'\("$foldername"\)$'\n\nA = Confirm    B = Cancel\nSelect = Fullscreen'
 			fi
    
     	   	   
