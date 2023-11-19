@@ -1,0 +1,6 @@
+{
+	"label":	"File Explorer",
+	"icon":	"/mnt/SDCARD/Themes/Wasteland by Bernig/icons/app/commander.png",
+	"launch":	"launch.sh",
+	"description":	"DinguxCommander"
+}
