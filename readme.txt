@@ -1,3 +1,4 @@
+Use the releases for confirmed working versions
 Theme Store app by Sebastian Maung
 https://github.com/SebastianMaung/MiyooThemeDownloader
 Built for Onion OS
