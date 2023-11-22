@@ -14,7 +14,7 @@ st -q -e $home"/downloadmain.sh"
 # running thumbnails_generator for AdvanceMenu
 #./thumbnails_generator.sh
 if [ -f "/mnt/SDCARD/.tmp_update/onionVersion/version.txt" ]; then
-	infoPanel -t "Easy LogoTweak" -m "LOADING...\n \nEasy LogoTweak by Schmurtz\nMusic : The World Of Douve by DOUVE" --persistent &
+	infoPanel -t "ThemeStore" -m "LOADING...\nMusic : The World Of Douve by DOUVE\nThemeStore by Sebastian Maung\nWith help from schmurtzm" --persistent &
 	LD_LIBRARY_PATH="./libs:$LD_LIBRARY_PATH"
 else
 	LD_LIBRARY_PATH="./libs:./bin:/customer/lib:/config/lib:/lib"
@@ -39,7 +39,7 @@ cd $homedir
 echo 255 > /sys/class/pwm/pwmchip0/pwm0/duty_cycle
 
 
-HOME=. ./advmenu
+HOME=. ./advmenu -cfg ./advmenu.rc
 
 /customer/app/sysmon freemma
 
