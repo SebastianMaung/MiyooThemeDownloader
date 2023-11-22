@@ -1,5 +1,3 @@
-Use the releases for working versions! Downloading straight from this source here will cause the app to close right after the script!
-
 Theme Store app by Sebastian Maung
 https://github.com/SebastianMaung/MiyooThemeDownloader
 Built for Onion OS
