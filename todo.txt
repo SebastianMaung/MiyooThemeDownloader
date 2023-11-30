@@ -1,0 +1,4 @@
+Todo list for this application
+
+1. Add offset, as some users have some issue of advancemenu switching to the preview before the one selected
+2. Clean up UI when selecting a preview
