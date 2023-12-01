@@ -1,7 +1,7 @@
 #!/bin/sh
 cd $(dirname "$0")
 pwd
-
+mkdir /mnt/SDCARD/Themes #just in case it isnt there
 #sleep 5
 echo "This is a theme download and preview script, and will not flash logos"
 echo "Running thumbnail script in case there are already previews"
