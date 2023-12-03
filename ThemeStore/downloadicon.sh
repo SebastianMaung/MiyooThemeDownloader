@@ -11,6 +11,6 @@ url=$(sed -n "${num}p" < zip_urls.txt)
 #echo $num
 #echo $irl
 #Hardcoded download to theme
-wget "$url" -O "/mnt/SDCARD/Themes/theme.$num.zip"
+wget "$url" -O "/mnt/SDCARD/Icons/icon.$num.zip"
 #unzip "/mnt/SDCARD/Icons/icon.$num.zip" -d /mnt/SDCARD/Icons/
-./bin/themeSwitcher
+#./bin/themeSwitcher

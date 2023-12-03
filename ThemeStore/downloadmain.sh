@@ -18,11 +18,27 @@ mkdir thumbnails
 #cd -
 content=$(wget -qO- https://raw.githubusercontent.com/OnionUI/Themes/main/README.md)
 
-echo "$content" | grep -o 'http[s]*://[^"]*preview\.png' | sort | uniq > preview_urls.txt
-echo "$content" | grep -o 'http[s]*://[^"]*\.zip' | sort | uniq > zip_urls.txt
 
+
+
+
+#echo "$content" | grep -o 'icons/[^"]*gba\.png' | sed 's|^|https://raw.githubusercontent.com/OnionUI/Themes/main/|' > preview_urls.txt
+
+#exit
+#echo "$content" | grep -o 'themes/[^"]*gba\.png' | sed 's|^|https://raw.githubusercontent.com/OnionUI/Themes/main/|' > preview_urls.txt
+
+#exit
+
+
+echo "$content" | grep -o 'http[s]*://[^"]*preview\.png' | sort | uniq > preview_urls.txt
+echo "$content" | grep -o 'icons/[^"]*gba\.png' | sed 's|^|https://raw.githubusercontent.com/OnionUI/Themes/main/|' >> preview_urls.txt
+#echo "$content" | grep -o 'themes/[^"]*gba\.png' | sed 's|^|https://raw.githubusercontent.com/OnionUI/Themes/main/|' >> preview_urls.txt
+#noecho "$content" | grep -o 'http[s]*://[^"]*\.zip?raw=true' | sort | uniq > zip_urls.txt
+echo "$content" | grep -o 'http[s]*://[^"]*\.zip' | sort | uniq > zip_urls.txt
+echo "$content" | grep -o 'release/[^"]*.zip?raw=true' | sed 's|^|https://raw.githubusercontent.com/OnionUI/Themes/main/|' >> zip_urls.txt
+#exit
 echo "Downloading preview images..."
-#cat preview_urls.txt | xargs -n 1 wget -q
+#nocat preview_urls.txt | xargs -n 1 wget -q
 
 amt=$(grep -c '.' preview_urls.txt)
 echo $amt

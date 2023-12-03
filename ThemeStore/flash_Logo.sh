@@ -71,7 +71,7 @@ checkjpg() {
 # if we press "A" for flashing and the current image exists
 if [ -f "./logos/$foldername/image1.jpg" ]; then
 	DisplayInstructions=1
-	./bin/say "Choose Theme?"$'\n'\("$foldername"\)$'\n\nA = Confirm    B = Cancel\nSelect = Fullscreen'
+	./bin/say "Choose Theme or Icon?"$'\n'\("$foldername"\)$'\n\nA = Theme    B = Cancel  X = Icon\nSelect = Fullscreen'
 	
 	while :
 	do
@@ -94,6 +94,21 @@ if [ -f "./logos/$foldername/image1.jpg" ]; then
     		sleep 5
 		cd /mnt/SDCARD/.tmp_update
 		./bin/themeSwitcher
+		exit 1
+	elif [ "$KeyPressed" = "X" ]; then
+		mkdir /mnt/SDCARD/Icons/
+		./bin/say "Loading icon "$foldername"..."
+		sleep 3
+                sh ./downloadicon.sh $foldername
+                ./bin/blank
+		unzip "/mnt/SDCARD/Icons/icon.$foldername.zip" -d /mnt/SDCARD/Icons/
+    		./bin/say 'Use Tweaks -> Appearance -> Icons packs'
+    		sleep 5
+		cd /mnt/SDCARD/Icons
+		unzip icon.$num.zip
+		cd /mnt/SDCARD/.tmp_update
+		./bin/tweaks
+
 		exit 1
     	elif [ "$KeyPressed" = "B" ] || [ "$KeyPressed" = "menu" ] ; then
     		./bin/blank
