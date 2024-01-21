@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#Will not flash anything despite filename
 echo "=====================  $0   $1" 
 cd ..
 
