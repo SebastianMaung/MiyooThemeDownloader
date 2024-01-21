@@ -3,11 +3,12 @@ cd $(dirname "$0")
 pwd
 mkdir /mnt/SDCARD/Themes #just in case it isnt there
 #sleep 5
-echo "Running thumbnail script in case there are already previews"
+#echo "Running thumbnail script in case there are already previews"
 sleep 5
-./thumbnails_generator.sh
+#./thumbnails_generator.sh
 echo "Launching downloadmain.sh (preview download script)"
 echo "Press X and then menu to skip download"
+echo "Do not cancel on first launch"
 sleep 5
 mkdir logos
 mkdir thumbnails
