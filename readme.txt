@@ -3,10 +3,9 @@ https://github.com/SebastianMaung/MiyooThemeDownloader
 Built for Onion OS
 https://github.com/OnionUI/Onion
 
-
 Themes are pulled from here:
 https://github.com/OnionUI/Themes
-The icons are from the "Standalone Icon Packs", so as of Dec 7 2023, there are only 7
+The icons are from the "Standalone Icon Packs"
 
 After moving this app to the App directory of the Miyoo, launch it (Onion OS Theme Store)
 It will start downloading the previews, which may take up to 5 minutes
