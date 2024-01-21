@@ -36,9 +36,9 @@ for d in ./logos/* ; do
 			echo "./imagemagick/magick \"$d/image1.jpg\" -rotate 180 -resize 50% -modulate 110 -depth 8 -define png:color-type=6 \"./thumbnails/${d##*/}.png\""
 		       ./imagemagick/magick "$d/image1.jpg" -rotate 180 -resize 50% -modulate 110 -depth 8 -define png:color-type=6 "./thumbnails/${d##*/}.png"
 		else
+  		        echo "Image ${d##*/} already existed but running imagemagick anyway"
                         rm "./thumbnails/${d##*/}.png"                                                                                
   		       ./imagemagick/magick "$d/image1.jpg" -rotate 180 -resize 50% -modulate 110 -depth 8 -define png:color-type=6 "./thumbnails/${d##*/}.png"
-		        echo "${d##*/} already exist but ran imagemagick anyway"
 		fi
 	fi
 
