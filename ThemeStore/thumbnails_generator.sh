@@ -29,11 +29,16 @@ for d in ./logos/* ; do
 		echo ============================= ${d##*/} =============================
 
 		if [ ! -f "./thumbnails/${d##*/}.png" ] || [ "$Force" -eq 1 ] ; then
+		        #might be the cause of the problem...
 			# we create a png : rotated, half resolution, 140% of luminosity, color depth 8 bits
+			# delete original just in case
+			rm "./thumbnails/${d##*/}.png"
 			echo "./imagemagick/magick \"$d/image1.jpg\" -rotate 180 -resize 50% -modulate 110 -depth 8 -define png:color-type=6 \"./thumbnails/${d##*/}.png\""
-		    ./imagemagick/magick "$d/image1.jpg" -rotate 180 -resize 50% -modulate 110 -depth 8 -define png:color-type=6 "./thumbnails/${d##*/}.png"
+		       ./imagemagick/magick "$d/image1.jpg" -rotate 180 -resize 50% -modulate 110 -depth 8 -define png:color-type=6 "./thumbnails/${d##*/}.png"
 		else
-		    echo "${d##*/} already exist"
+                        rm "./thumbnails/${d##*/}.png"                                                                                
+  		       ./imagemagick/magick "$d/image1.jpg" -rotate 180 -resize 50% -modulate 110 -depth 8 -define png:color-type=6 "./thumbnails/${d##*/}.png"
+		        echo "${d##*/} already exist but ran imagemagick anyway"
 		fi
 	fi
 
