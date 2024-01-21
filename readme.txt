@@ -7,9 +7,10 @@ Themes are pulled from here:
 https://github.com/OnionUI/Themes
 The icons are from the "Standalone Icon Packs"
 
+
 After moving this app to the App directory of the Miyoo, launch it (Onion OS Theme Store)
 It will start downloading the previews, which may take up to 5 minutes
-If at any point you want to stop the downloads, press X, then menu
+If at any point you want to stop the downloads, press X, then menu (canceling it might result in some themes not showing)
 It will take you to a UI with all the previews of the themes
 If you are downloading a theme, press A on the theme you want. If you want to download an icon pack, press X.
 It will download the theme or icon, which should take only a few seconds
