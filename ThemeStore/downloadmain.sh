@@ -7,6 +7,7 @@ mkdir /mnt/SDCARD/Themes #just in case it isnt there
 sleep 5
 #./thumbnails_generator.sh
 echo "Launching downloadmain.sh (preview download script)"
+ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/null && echo 'Wifi OK' || echo 'No connection' #mateusza, stackoverflow 100567
 echo "Press X and then menu to skip download"
 echo "Do not cancel on first launch"
 sleep 5
