@@ -17,4 +17,3 @@ It will download the theme or icon, which should take only a few seconds
 You will then be sent to the theme switcher, where you can choose your newly downloaded theme
 If you downloaded an icon pack, you will be sent to Tweaks, which you can then to to Appearance and then Apply icon pack.
 If you do not want to change anything, press menu
-(If the source doesn't work, the latest release probably will)
