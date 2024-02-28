@@ -12,45 +12,12 @@ cd "$progdir"
 touch /tmp/stay_awake
 #Check if a current version of the Theme README has already been downloaded
 #Checking if the file exists 
-echo "Checking for updates"
 
-#This downloads the latest README and grabs its checksum f1c0835b111e94336679169d1e0b2b07 (29-Feb-2024)
-wget -O latest_md https://raw.githubusercontent.com/OnionUI/Themes/main/README.md
-latest_checksum=$(md5sum 'latest_md' | awk '{print $1}')
-#remove the file once md5sum has been calculated
-rm latest_md
-
-#f1c0835b111e94336679169d1e0b2b07
-
-if [ -f "res/current_checksum.txt" ]; then
-    #Checking the checksum of the previous saved checksum
-    current_checksum=$(<"res/current_checksum.txt")
-
-    if [ $current_checksum = $latest_checksum ]; then
-        #There is no changes to the README
-        echo "No Updates Found"
-    else 
-        #There is an update found to the README
-        #Download Themes 
-        echo "Update Found"
-		t -q -e $home"/downloadmain.sh"
-
-		#Saves the new checksum to the txt file
-        echo $latest_checksum > res/current_checksum.txt
-    fi 
-else
-
-    echo "First time installation"
-	#Download themes
-    st -q -e $home"/downloadmain.sh"
-	#Saves the new checksum to the txt file
-    echo $latest_checksum > res/current_checksum.txt
-fi
 #check sum ends
 # running thumbnails_generator for AdvanceMenu
 #./thumbnails_generator.sh
 if [ -f "/mnt/SDCARD/.tmp_update/onionVersion/version.txt" ]; then
-	infoPanel -t "ThemeStore" -m "LOADING...\nMusic : The World Of Douve by DOUVE\nThemeStore by Sebastian Maung\nWith help from schmurtzm" --persistent &
+	infoPanel -t "ThemeStore" -m "LOADING...\nMusic : The World Of Douve by DOUVE\nThemeStore by Sebastian Maung\nWith help from schmurtzm and Lachlan" --persistent &
 	LD_LIBRARY_PATH="./libs:$LD_LIBRARY_PATH"
 else
 	LD_LIBRARY_PATH="./libs:./bin:/customer/lib:/config/lib:/lib"
