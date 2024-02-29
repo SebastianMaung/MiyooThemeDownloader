@@ -10,6 +10,7 @@ echo ----
 home="$PWD"
 cd "$progdir"
 touch /tmp/stay_awake
+st -q -e $home"/downloadmain.sh"
 #Check if a current version of the Theme README has already been downloaded
 #Checking if the file exists 
 
@@ -17,7 +18,7 @@ touch /tmp/stay_awake
 # running thumbnails_generator for AdvanceMenu
 #./thumbnails_generator.sh
 if [ -f "/mnt/SDCARD/.tmp_update/onionVersion/version.txt" ]; then
-	infoPanel -t "ThemeStore" -m "LOADING...\nMusic : The World Of Douve by DOUVE\nThemeStore by Sebastian Maung\nWith help from schmurtzm and Lachlan" --persistent &
+	infoPanel -t "ThemeStore" -m "LOADING...\nMusic : The World Of Douve by DOUVE\nThemeStore by Sebastian Maung\nWith help from schmurtzm" --persistent &
 	LD_LIBRARY_PATH="./libs:$LD_LIBRARY_PATH"
 else
 	LD_LIBRARY_PATH="./libs:./bin:/customer/lib:/config/lib:/lib"
