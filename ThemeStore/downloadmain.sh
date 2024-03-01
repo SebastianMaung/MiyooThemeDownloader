@@ -93,7 +93,7 @@ if [ -f "current_checksum.txt" ]; then
         #There is an update found to the README
         #Download Themes 
         echo "Update Found"
-		#downloadmain
+		downloadmain
 
 		#Saves the new checksum to the txt file
         echo $latest_checksum > current_checksum.txt
@@ -102,7 +102,7 @@ else
 
     echo "First time installation"
 	#Download themes
-    #downloadmain
+    downloadmain
 
 
 	#Saves the new checksum to the txt file
