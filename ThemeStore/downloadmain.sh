@@ -89,6 +89,7 @@ if [ -f "current_checksum.txt" ]; then
     if [ $current_checksum = $latest_checksum ]; then
         #There is no changes to the README
         echo "No Updates Found"
+	sleep 5
     else 
         #There is an update found to the README
         #Download Themes 
