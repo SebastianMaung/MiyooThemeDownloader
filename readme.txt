@@ -1,3 +1,5 @@
+v1.0.5 may have issues, please use v1.0.4 in the meantime
+
 Theme Store app by Sebastian Maung
 https://github.com/SebastianMaung/MiyooThemeDownloader
 Built for Onion OS
