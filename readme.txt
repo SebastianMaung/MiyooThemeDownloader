@@ -1,4 +1,5 @@
 v1.0.5 may have issues, please use v1.0.4 in the meantime
+https://github.com/SebastianMaung/MiyooThemeDownloader/releases/tag/v1.0.4
 
 Theme Store app by Sebastian Maung
 https://github.com/SebastianMaung/MiyooThemeDownloader
