@@ -76,7 +76,7 @@ echo "Checking for updates"
 
 #This downloads the latest README and grabs its checksum f1c0835b111e94336679169d1e0b2b07 (29-Feb-2024)
 wget -O latest_md https://raw.githubusercontent.com/OnionUI/Themes/main/README.md
-latest_checksum= md5sum 'latest_md' | awk '{print $1}'
+latest_checksum=$(md5sum 'latest_md' | awk '{print $1}')
 #remove the file once md5sum has been calculated
 rm latest_md
 
