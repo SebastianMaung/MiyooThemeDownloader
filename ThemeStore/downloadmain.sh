@@ -86,7 +86,7 @@ if [ -f "current_checksum.txt" ]; then
     #Checking the checksum of the previous saved checksum
     current_checksum=$(<"current_checksum.txt")
 
-    if [ $current_checksum = $latest_checksum ]; then
+    if [ $current_checksum == $latest_checksum ]; then
         #There is no changes to the README
         echo "No Updates Found"
 	sleep 5
