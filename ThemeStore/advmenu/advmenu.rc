@@ -95,7 +95,7 @@ difficulty none
 # Special commands
 ui_command "Force Thumbnails refresh" cd ..; ./thumbnails_generator.sh 1; ./bin/say "Please restart Easy LogoTweak"; sleep 3; pkill -9 advmenu; 
 
-emulator "EasyLogoTweak" generic "../themeadd.sh" "%p"
+emulator "EasyLogoTweak" generic "../flash_Logo.sh" "%p"
 emulator_roms "EasyLogoTweak" "./thumbnails/"
 emulator_roms_filter "EasyLogoTweak" "*.png:*.pcx"
 emulator_altss "EasyLogoTweak"  "./thumbnails/"
