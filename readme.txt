@@ -1,3 +1,5 @@
+Not working as of May 22, the format for downloading themes has changed. This will be fixed by the end of this month.
+----------------------------------
 Theme Store app by Sebastian Maung
 https://github.com/SebastianMaung/MiyooThemeDownloader
 Built for Onion OS
