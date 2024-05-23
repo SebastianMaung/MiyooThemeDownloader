@@ -15,6 +15,6 @@ rm "$temp_file"
 for file in *.md; do
     if [ -f "$file" ]; then
         echo "Processing $file"
-        cat "$file" >> "README.md"  # Append content to README.MD
+        cat "$file" > "README.md"  # Append content to README.MD
     fi
 done
