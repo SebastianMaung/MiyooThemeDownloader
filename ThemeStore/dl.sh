@@ -10,3 +10,12 @@ wget -q -O "$temp_file" "$base_url"
     wget "$file_url"
 done
 rm "$temp_file"
+
+
+
+for file in *.md; do
+    if [ -f "$file" ]; then
+        echo "Processing $file"
+        cat "$file" > "README.MD"
+    fi
+done
