@@ -16,8 +16,12 @@ mkdir thumbnails
 #cd /mnt/SDCARD/App/MiyooThemeDownloaderApp/ && rm -f *.zip
 #!/bin/bash
 #cd -
-content=$(wget -qO- https://raw.githubusercontent.com/OnionUI/Themes/main/README.md)
+sh dl.sh
 
+content=$(cat "/mnt/SDCARD/App/ThemeStore/README.md")
+#content=$(wget -qO- https://raw.githubusercontent.com/OnionUI/Themes/main/README.md)
+
+#cat $content
 
 
 
@@ -61,5 +65,4 @@ sleep 5
 ./thumbnails_generator.sh
 #sh launch.sh
 #exit
-
 
