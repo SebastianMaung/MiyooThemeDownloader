@@ -12,9 +12,4 @@ wget -q https://github.com/Zackptg5/Cross-Compiled-Binaries-Android/raw/master/g
     wget  -O "$filename" "$file_url"
 done
 rm "$temp_file"
-for file in *.md; do
-    if [ -f "$file" ]; then
-        echo "Processing $file"
-        cat "$file" > "README.md"  # Append content to README.MD
-    fi
-done
+awk 'BEGIN{OFS=","} {print FILENAME,$0}' *.md > README.md #ravindersingh13
