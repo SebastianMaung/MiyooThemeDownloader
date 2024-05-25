@@ -18,7 +18,7 @@ mkdir thumbnails
 #cd -
 sh dl.sh
 
-content=$(cat "/mnt/SDCARD/App/ThemeStore/README.md")
+content=$(cat "README.md")
 #content=$(wget -qO- https://raw.githubusercontent.com/OnionUI/Themes/main/README.md)
 
 #cat $content
