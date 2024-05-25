@@ -1,4 +1,4 @@
-Not working as of May 22, the format for downloading themes has changed. This will be fixed by the end of this month.
+As of May 22, the system for theme management has changed on the repository. A fix has been implemenmted, but if another change arises and causes this app to work, please consider opening an issue.
 ----------------------------------
 Theme Store app by Sebastian Maung
 https://github.com/SebastianMaung/MiyooThemeDownloader
