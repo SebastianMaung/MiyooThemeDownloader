@@ -18,6 +18,38 @@ mkdir thumbnails
 #cd -
 sh dl.sh
 
+wget "https://raw.githubusercontent.com/OnionUI/Themes/main/generated/custom/index.md" -O index.md
+rm check
+touch check
+touch checkold
+#cp check checkold
+md5sum index.md > check
+if cmp -s checkold check; then
+	sleep 5
+	echo "No updates it seems, force download update anyway?"
+	echo "YES or NO (x to bring keyboard)"
+	read ANS
+	if [ "$ANS" = "YES" ]; then
+		echo "Updating..."
+		sleep 3
+		cp check checkold
+		rm checkold
+		sh downloadmain.sh
+		exit
+	elif [ "$ANS" = "NO" ]; then
+		echo "Quitting..."
+		sleep 2
+		exit
+	fi
+	sleep 2
+	./thumbnails_generator.sh
+	exit
+fi
+sleep 5
+echo "Update to theme repo, updating"
+#rm check
+#rm checkold
+cp check checkold
 content=$(cat "README.md")
 #content=$(wget -qO- https://raw.githubusercontent.com/OnionUI/Themes/main/README.md)
 
