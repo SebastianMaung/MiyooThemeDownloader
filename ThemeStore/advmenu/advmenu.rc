@@ -88,8 +88,8 @@ ui_text_size 34
 ui_name yes
 sort parent
 preview snap
-menu_base 68
-menu_rel 5
+menu_base 76
+menu_rel 3
 difficulty none
 
 # Special commands
@@ -107,4 +107,3 @@ group "<undefined>"
 type "<undefined>"
 emulator_attrib "EasyLogoTweak" missing exclude
 emulator_attrib "EasyLogoTweak" duplicate include
-game "EasyLogoTweak/151" "" "" 0 1 ""
