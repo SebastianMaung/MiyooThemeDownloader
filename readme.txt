@@ -1,4 +1,4 @@
-As of May 22, the system for theme management has changed on the repository. A fix has been implemenmted, but if another change arises and causes this app to work, please consider opening an issue.
+I think it's broken right now, I'll fix it some time during June. If you have a fix submit a pull request please - thanks
 ----------------------------------
 Theme Store app by Sebastian Maung
 https://github.com/SebastianMaung/MiyooThemeDownloader
