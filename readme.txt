@@ -1,4 +1,4 @@
-I think it's broken right now, I'll fix it some time during June. If you have a fix submit a pull request please - thanks
+Archived due to loss of interest to keep maintaing the program, please fork and try your hand of fixing it - thanks
 ----------------------------------
 Theme Store app by Sebastian Maung
 https://github.com/SebastianMaung/MiyooThemeDownloader
